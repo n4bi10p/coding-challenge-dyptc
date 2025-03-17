@@ -30,8 +30,11 @@ int findKthLargest(int arr[], int n, int k) {
 int main() {
     int arr[] = {1, 4, 3, 8, 4, 9, 2, 5, 6};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int k = 3; // Example: Find 3rd largest element
-    
+    int k;
+
+    printf("Enter the value of K to find the Kth largest element: ");
+    scanf("%d", &k);
+
     int result = findKthLargest(arr, n, k);
     if (result != -1) {
         printf("The %dth largest element is %d\n", k, result);
